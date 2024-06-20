@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'CoffeeNormal';
+    src: url(Fonts/coffeenormal.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* Ensure the body and html take full height */
+    
+    background-image: url(pics/mainbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    padding-top: 150px;
+    margin: 0;
+    font-family: 'CoffeeNormal';
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}
+
+.button1 {
+    display: flex;
+    /* Use Flexbox for centering */
+    flex-direction: column;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+/* CSS */
+.button-57 {
+    position: relative;
+    margin-top: 60px;
+    font-family: 'CoffeeNormal';
+    overflow: hidden;
+    border: 1px solid #18181a;
+    color: #18181a;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 40px;
+    width: 300px;
+    padding: 18px 18px 17px;
+    text-decoration: none;
+    cursor: pointer;
+    background: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-57 span:first-child {
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+}
+
+.button-57 span:last-child {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+}
+
+.button-57:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+}
+
+.button-57:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+.startpics {
+    margin-top: 100px;
+    display: flex;
+    /* Use Flexbox for centering */
+    flex-direction: row;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    gap: 5em;
+}
+p {
+    color: white;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
