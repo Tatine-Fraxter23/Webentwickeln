@@ -3,6 +3,12 @@
         padding: 0;
     }
 
+    @font-face {
+        font-family: 'gunplay';
+        src: url(fonts/gunplayrg.ttf);
+    }
+    
+
     nav {
         margin: 0;
         background-color: #1A1A2E;
@@ -21,6 +27,8 @@
         margin: 0;
         padding: 0;
         list-style: none;
+        display: flex;
+        justify-content: center;
     }
 
     nav ul li {
@@ -28,11 +36,16 @@
         margin-right: 25px;
     }
 
-    a:link {
+    nav ul li a:link,
+    nav ul li a:visited,
+    nav ul li a:hover,
+    nav ul li a:active {
         color: white;
-        font-size: 20px;
+        font-size: 30px;
+        text-decoration: none;
+        font-family: 'gunplay';
     }
-
-    a:hover {
+    
+    nav ul li a:hover {
         color: brown;
     }
