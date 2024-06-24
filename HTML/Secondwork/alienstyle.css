@@ -1,17 +1,18 @@
     body {
         margin: 0;
         padding: 0;
+        background-color: #80BCBD;
     }
 
     @font-face {
         font-family: 'gunplay';
         src: url(fonts/gunplayrg.ttf);
     }
-    
+
 
     nav {
         margin: 0;
-        background-color: #1A1A2E;
+        background-color: #92C7CF;
     }
 
     nav h1 {
@@ -21,31 +22,37 @@
         text-align: center;
         color: white;
         font-size: 60px;
-    }
-
-    nav ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        justify-content: center;
-    }
-
-    nav ul li {
-        display: inline-block;
-        margin-right: 25px;
-    }
-
-    nav ul li a:link,
-    nav ul li a:visited,
-    nav ul li a:hover,
-    nav ul li a:active {
-        color: white;
-        font-size: 30px;
-        text-decoration: none;
         font-family: 'gunplay';
     }
-    
-    nav ul li a:hover {
-        color: brown;
+
+    .mainbtn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .startbtn {
+            display: flex;
+            justify-content: center;
+            width: 60px;
+            border: solid;
+            border-radius: 10px;
+            border-color: #AAD7D9;
+            border-width: 5px;
+            transition: transform 0.2s, box-shadow 0.5s;
+            background-color: #FBF9F1;
+        }
+
+        .startbtn:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            background-color: burlywood;
+        }
+
+        .startbtn:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
     }
