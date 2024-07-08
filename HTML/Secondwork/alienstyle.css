@@ -617,7 +617,7 @@
 
     .friendname:active {
         color: black;
-        transform: translateY(6px);
+        transform: translateY(20px);
     }
 
     a {
