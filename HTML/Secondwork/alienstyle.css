@@ -99,7 +99,7 @@
             padding-left: 20px;
             transition: transform 0.2s, box-shadow 0.5s;
         }
-    
+
         .backbtn:hover {
             transform: translateY(-10px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -107,7 +107,7 @@
             border-color: black;
             background-color: white;
         }
-    
+
         .backbtn:active {
             transform: translateY(2px);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -257,33 +257,370 @@
         }
     }
 
-    .container2 {
+    .imgholder {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         gap: 100px;
-        padding-top: 100px;
+        justify-content: center;
+        margin-top: 100px;
+    }
 
-        .friendpics {
-            background-color: #E2726B;
+    .imagecontainer {
+        position: relative;
+        height: 450px;
+        width: 400px;
+    }
 
-            .edithovrlay {
-                display: flex;
-                flex-direction: row;
-                gap: 100px;
-                position: absolute;
-                background: rgba(255, 255, 0, 0.6);
-                color:#ffffff;
-                width: 400px;
-                height: 404px;
-                top: 275px;
-                left: 0;
-                align-items: center;
-                justify-content: center;
-            }
-        }
+    .imagecontainer img {
+        background-color: #E2725B;
+    }
 
-        .friendname {
-            position: absolute;
-        }
+    .edithovrlay {
+        position: absolute;
+        color: white;
+        background: rgba(0, 0, 255, 0.6);
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        font-size: 45px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .edithovrlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+    .edithovrlay:hover > * {
+        transform: translateY(0);
+    }
+
+    .edithovrlay:hover {
+        opacity: 1;
+    }
+
+    .cleoovrlay {
+        position: absolute;
+        color: white;
+        background: rgba(75, 0, 130, 0.6);
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        font-size: 45px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .cleoovrlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+    .cleoovrlay:hover > * {
+        transform: translateY(0);
+    }
+
+    .cleoovrlay:hover {
+        opacity: 1;
+    }
+
+    .ramovrlay {
+        position: absolute;
+        color: white;
+        background: rgba(75, 0, 130, 0.6);
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        font-size: 45px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .ramovrlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+    .ramovrlay:hover > * {
+        transform: translateY(0);
+    }
+
+    .ramovrlay:hover {
+        opacity: 1;
+    }
+
+    .kurtovrlay {
+        position: absolute;
+        color: white;
+        background: rgba(137, 137, 137, 0.6);
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        font-size: 45px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .kurtovrlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+    .kurtovrlay:hover > * {
+        transform: translateY(0);
+    }
+
+    .kurtovrlay:hover {
+        opacity: 1;
+    }
+
+    .kirkovrlay {
+        position: absolute;
+        color: white;
+        background: rgba(255, 0, 0, 0.6);
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        font-size: 45px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .kirkovrlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+    .kirkovrlay:hover > * {
+        transform: translateY(0);
+    }
+
+    .kirkovrlay:hover {
+        opacity: 1;
+    }
+
+    .louiseovrlay {
+        position: absolute;
+        color: white;
+        background: rgba(255, 165, 0, 0.6);
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        font-size: 45px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .louiseovrlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+    .louiseovrlay:hover > * {
+        transform: translateY(0);
+    }
+
+    .louiseovrlay:hover {
+        opacity: 1;
+    }
+
+    .daveovrlay {
+        position: absolute;
+        color: white;
+        background: rgba(255, 192, 203, 0.6);
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        font-size: 45px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .daveovrlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+    .daveovrlay:hover > * {
+        transform: translateY(0);
+    }
+
+    .daveovrlay:hover {
+        opacity: 1;
+    }
+
+    .lalaineovrlay {
+        position: absolute;
+        color: white;
+        background: rgba(0, 0, 0, 0.6);
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        font-size: 45px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .lalaineovrlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+    .lalaineovrlay:hover > * {
+        transform: translateY(0);
+    }
+
+    .lalaineovrlay:hover {
+        opacity: 1;
+    }
+
+    .jdovrlay {
+        position: absolute;
+        color: white;
+        background: rgba(255, 165, 0, 0.6);
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        font-size: 45px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .jdovrlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+    .jdovrlay:hover > * {
+        transform: translateY(0);
+    }
+
+    .jdovrlay:hover {
+        opacity: 1;
+    }
+
+    .sebovrlay {
+        position: absolute;
+        color: white;
+        background: rgba(0, 0, 255, 0.6);
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        font-size: 45px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .sebovrlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+    .sebovrlay:hover > * {
+        transform: translateY(0);
+    }
+
+    .sebovrlay:hover {
+        opacity: 1;
+    }
+
+    .joshovrlay {
+        position: absolute;
+        color: white;
+        background: rgba(0, 0, 0, 0.6);
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        font-size: 45px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .joshovrlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+    .joshovrlay:hover > * {
+        transform: translateY(0);
+    }
+
+    .joshovrlay:hover {
+        opacity: 1;
+    }
+
+    .restineovrlay {
+        position: absolute;
+        color: white;
+        background: rgba(0, 0, 255, 0.6);
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        font-size: 45px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .restineovrlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+    .restineovrlay:hover > * {
+        transform: translateY(0);
+    }
+
+    .restineovrlay:hover {
+        opacity: 1;
+    }
+
+    .friendname {
+        position: absolute;
+    }
+
+    .friendname:active {
+        color: black;
+        transform: translateY(6px);
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
     }
